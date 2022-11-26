@@ -1,0 +1,148 @@
+body,
+p,
+h1,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.menu-nav {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu-nav a {
+  font-size: 17px;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+.menu-container {
+  background-color: #fff5ed;
+  justify-content: center;
+  box-shadow: inset 0 -20px white;
+  max-width: 100%;
+}
+
+.conteudo {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+
+.conteudo-bg {
+  padding-left: 100px;
+}
+
+.conteudo-bg h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 60px;
+  font-family: "Gelasio", serif;
+  position: relative;
+  white-space: nowrap;
+}
+.conteudo-bg h1::after {
+  content: "";
+  display: block;
+  width: 68.36px;
+  height: 100px;
+  background: url("./img/deco.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+.conteudo-bg p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #595959;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: start;
+  max-width: 100%;
+  width: 400px;
+}
+
+.botao-servico {
+  background: linear-gradient(#ea6f42, #df5e2e);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.botao-transparente {
+  border: solid 2px #b3b3b3;
+  padding: 10px;
+  border-radius: 5px;
+  color: #595959;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+[data-anima="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+[data-anima="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+@media (max-width: 923px) {
+  .header {
+    margin-top: 0;
+    gap: 20px;
+  }
+  .conteudo img {
+    display: none;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+    padding-right: 30px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .conteudo-bg h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .menu-container {
+    height: 500px;
+  }
+}

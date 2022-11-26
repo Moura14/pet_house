@@ -1,0 +1,95 @@
+.precos {
+  margin-top: 150px;
+}
+
+.precos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 800px;
+  align-items: flex-end;
+}
+
+.precos h1 {
+  font-family: "Gelasio", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 100px;
+}
+
+.precos-card {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+
+  text-align: center;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.precos-card h2 {
+  font-family: "Gelasio", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.precos-card span {
+  font-size: 20px;
+  color: #fd7947;
+  font-weight: bold;
+  font-family: "Gelasio", sans-serif;
+  border-top: 2px solid #000000;
+  padding-top: 10px;
+}
+.precos-card ul {
+  font-family: "Gelasio", sans-serif;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  margin: 20px;
+}
+
+.precos-card a {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  background: #fd7947;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.precos-card li {
+  text-align: start;
+  padding: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.precos-card li::before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background: #000000;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 50%;
+  text-align: start;
+}
+
+@media (max-width: 209px) {
+  .precos h1 {
+    padding-left: 30px;
+  }
+  .precos-card {
+    padding-left: 20px;
+  }
+  .precos-flex {
+    padding-left: 100px;
+    justify-content: center;
+  }
+}
